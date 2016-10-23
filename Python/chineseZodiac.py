@@ -1,11 +1,4 @@
-"""
-File:       ChineseZodiac.py    
-Date:       9/29/2016
-Instructor: Nguyen Thai
-Course:     CSC 7014 - The Practice of Computer Programming
-Author:     Reshma Kapadnis
-Description: A program in which we have to calculate the Chinese zodiac sign, taking year as an input.
-"""
+
 
 import turtle
 ## set up screen##
