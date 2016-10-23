@@ -4,7 +4,7 @@
 # This version is for transforming an correl.txt matrix from ptraj to the interval (0,1)
 
 #	Output is printed and written to file lineout.txt.
-#      Version 1 Feb 4 08 blakhani REvised 3/5/08 blakhani : Works OK!!!!
+#      Version 1 Feb 4 08 DLB REvised 3/5/08 DLB and SK: Works OK!!!!
 
 
 #  This is my test matrix

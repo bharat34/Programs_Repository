@@ -13,17 +13,17 @@ if($charge > 0) {
 
 if($atomtype  =~/C/g)
                         {
-                        $xcom1 += $charge * $x;
-                        $ycom1 += $charge * $y;
-                        $zcom1 += $charge * $z;
-                        $div1 += $charge;
+                        $xcom1 += 12 * $x;
+                        $ycom1 += 12 * $y;
+                        $zcom1 += 12 * $z;
+                        $div1 += 12;
                         }
 if($atomtype =~/N/g)
                         {
-                        $xcom1 += $charge * $x;
-                        $ycom1 += $charge * $y;
-                        $zcom1 += $charge * $z;
-                        $div1 += $charge;
+                        $xcom1 += 14 * $x;
+                        $ycom1 += 14 * $y;
+                        $zcom1 += 14 * $z;
+                        $div1 += 14;
                         }
 			$mynoofpositivecharge++;
 			$mypositivecharge += $charge;
@@ -31,24 +31,24 @@ if($atomtype =~/N/g)
 else {
 	if($atomtype  =~/C/g)
                         {
-                        $xcom2 += $charge * $x;
-                        $ycom2 += $charge * $y;
-                        $zcom2 += $charge * $z;
-                        $div2 += $charge;
+                        $xcom2 += 12 * $x;
+                        $ycom2 += 12 * $y;
+                        $zcom2 += 12 * $z;
+                        $div2 += 12;
                         }
 	if($atomtype =~/N/g)
                         {
-                        $xcom2 += $charge * $x;
-                        $ycom2 += $charge * $y;
-                        $zcom2 += $charge * $z;
-                        $div2 += $charge;
+                        $xcom2 += 14 * $x;
+                        $ycom2 += 14 * $y;
+                        $zcom2 += 14 * $z;
+                        $div2 += 14;
                         }
 	if($atomtype =~/O/g)
                                    {
-                        $xcom2 += $charge * $x;
-                        $ycom2 += $charge * $y;
-                        $zcom2 += $charge * $z;
-                        $div2 += $charge;
+                        $xcom2 += 16 * $x;
+                        $ycom2 += 16 * $y;
+                        $zcom2 += 16 * $z;
+                        $div2 += 16;
                         }
 	
 			$mynoofnegativecharge++;
