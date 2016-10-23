@@ -1,13 +1,4 @@
-"""
-Created on Wed Oct  12 22:24:05 2016
 
-File:       bmi.py    
-Date:       10/13/2016
-Instructor: Nguyen Thai
-Course:     CSC 7014 - The Practice of Computer Programming
-Author:     Reshma Kapadnis
-Description: A program in which we have to calculate the BMI.
-"""
 
 class BMI:##creating the class
     def __init__(self, name, age, weight, height_foot, height_inch):
