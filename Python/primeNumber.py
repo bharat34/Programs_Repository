@@ -1,14 +1,5 @@
 
-"""
-Created on Wed Oct  5 22:24:05 2016
 
-File:       primeNumber.py    
-Date:       10/06/2016
-Instructor: Nguyen Thai
-Course:     CSC 7014 - The Practice of Computer Programming
-Author:     Reshma Kapadnis
-Description: A program in which we have to check the given numbers are prime numbers or not.
-"""
 
 
 from math import sqrt ##importing squareroot function from math
