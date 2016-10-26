@@ -1,3 +1,5 @@
+# The pythons scripts peforms a gaussian network model
+# analysis on a given pdb file using Prody devlopmed by Bahar group (12/01/2014)
 from prody import *
 from matplotlib.pylab import *
 #ion() # turn interactive mode on
