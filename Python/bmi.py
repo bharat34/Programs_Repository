@@ -1,5 +1,5 @@
 
-
+# A program to evalute the Body Masss Index (BMI) of the user
 class BMI:##creating the class
     def __init__(self, name, age, weight, height_foot, height_inch):
         self.name = str(name)###name in the string format
