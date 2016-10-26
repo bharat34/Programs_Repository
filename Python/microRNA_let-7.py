@@ -1,5 +1,7 @@
-# this program calculates the micro RNA pattern in a given
-# RNA fasta file (last modified by bharat lakhani)
+"""
+this program calculates the micro RNA pattern in a given
+ RNA fasta file (last modified by bharat lakhani)
+"""
 filehandle = open('sample.txt', "r")
 import re
 # regular expression matching operations
