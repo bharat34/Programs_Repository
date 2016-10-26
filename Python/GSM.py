@@ -1,8 +1,5 @@
-# -*- coding: utf-8 -*-
-# This code was copied from ProDy documentation.
-# Title: Gaussian Network Model (GNM) — ProDy
-# URL: http://www.csb.pitt.edu/prody/tutorials/enm_analysis/gnm.html
-
+# The pythons scripts peforms a gaussian network model
+# analysis on a given pdb file using Prody devlopmed by Bahar group (12/01/2014)
 from prody import *
 from matplotlib.pylab import *
 #ion() # turn interactive mode on
