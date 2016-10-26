@@ -1,5 +1,5 @@
 
-
+''' The programs predicts the Chinese zodiac based on the provided input'''
 import turtle
 ## set up screen##
 
