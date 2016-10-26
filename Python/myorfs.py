@@ -1,6 +1,8 @@
-﻿
-#This function takes a DNA string as input and finds all open reading frames.
-#It stores them in a list.
+"""
+This function takes a DNA string as input and finds all open reading frames.
+It stores them in a list
+Last modified by Bharat Lakhani (05/7/2015)
+"""
 def findorfs(dna):
     ORFlist = [] #List of ORFs as tuples (start position, length)
 
