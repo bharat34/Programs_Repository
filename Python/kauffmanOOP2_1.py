@@ -1,15 +1,10 @@
-#
-# Class node represents a single node of a degree 2 Kaufmann net
-# Class net represents a (out)degree 2 Kauffman net with randomly set 
-# neighbors and with the neighbor function chosen randomly among all
-# 2-input boolean functions
-#
+# a Kaufmann net program representing a net with degree 2
+# neighbours choosen randomly with 2-input boolean functions.
+# LAst modifie by Bharat Lakhani (04/07/2016)
 
 from random import *
 
-#
-# The sixteen 2-input boolean functions f0, f1, ... , f15
-#
+
 
 def f0(val1,val2):
   return 0
@@ -189,10 +184,8 @@ class net:
     for i in range(0,self.size): l += [self.nodes[i].value]
     return l
 
-#
-# to run a gene net simulation
-# define cycle and generun functions
-#
+# In order to run gene simulation
+# here you have to define cycle and generun
 
 def cycle(newstate, states):
   for i in range(len(states)):
