@@ -1,8 +1,12 @@
 import math
-# the program calculates Mutual information between all 
-# the N X N position in the protein family multiple sequence alignment
-#Written by Bharat Lakhani
-#Takes each sequence from an MSA file and adds it to a list
+"""
+the program calculates Mutual information between all 
+ the N X N position in the protein family multiple sequence alignment
+Written by Bharat Lakhani
+Takes each sequence from an MSA file and adds it to a list
+
+"""
+
 def create_msa(msafile):
     msafile=open(msafile,'r')
     msa=[]
