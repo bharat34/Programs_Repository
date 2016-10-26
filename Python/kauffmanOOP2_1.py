@@ -1,6 +1,6 @@
-# a Kaufmann net program representing a net with degree 2
+# a Kaufmann net program representing a net with 2 degree
 # neighbours choosen randomly with 2-input boolean functions.
-# LAst modifie by Bharat Lakhani (04/07/2016)
+# Last modified by Bharat Lakhani (04/07/2016)
 
 from random import *
 
