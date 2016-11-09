@@ -37,11 +37,18 @@ target.write(str(xedges[::1]))
 target.write(str(yedges[::1]))
 target.close()
 
+
 # here K = 0.0019872041is boltzmann constant in Kcal/mol
 # T is temperature in 298 Kelvin
 H1=-0.0019872041*298*np.log(H/np.amax(H))
+plt.title('Stastistical Free Eergy', fontsize=24, fontweight='bold')
+plt.xlabel('PC1',fontsize=14, fontweight='bold')
+plt.ylabel('PC2',fontsize=14, fontweight='bold')
 plt.imshow(H1, interpolation='nearest', origin='low',
                 extent=[xedges[0], xedges[-1], yedges[0], yedges[-1]])
 #plt.show()
-plt.colorbar()
+#cbar=plt.colorbar()
+cbar = plt.colorbar()
+#cbar.ax.set_yticklabels(['0','1','2','>3'])
+cbar.set_label('Kcal/mol', rotation=90,fontsize=14)
 plt.savefig('C:/Users/blakhani/Desktop/PC1-PC2.png',format='png')
