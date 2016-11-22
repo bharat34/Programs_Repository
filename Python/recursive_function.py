@@ -25,7 +25,7 @@ nums_list=[2,7,11,15]
 target=26
 
 # uncomment this to run the above function
-print sum_index(nums_list,target)
+#print sum_index(nums_list,target)
 
 """
   Recursive function to calculate the n factorial
@@ -70,6 +70,7 @@ def fibonacci_series(Fib_list,number):
         else:
             Fib_list.append(Fib_list[-1]+Fib_list[-2])
             return fibonacci_series(Fib_list,number-1)
+            
 # uncomment this to run the above function
 #Fib_list=[]
 #print fibonacci_series(Fib_list,5)
@@ -89,6 +90,7 @@ Note: "aba" is also a valid answer.
 Example:
 Input: "cbbd"
 Output: "bb"
+
 """
 
 def Palindromic_Substring(length,string):
@@ -107,6 +109,22 @@ def Palindromic_Substring(length,string):
 #print Palindromic_Substring(len('cbbd'),'cbbd')
 #print Palindromic_Substring(len('GEEKSFORGEEKS'),'GEEKSFORGEEKS')
 
+"""
+You are given a string, s, and a list of words, words, that are all of the 
+same length. Find all starting indices of substring(s) in s that is a 
+concatenation of each word in words exactly once and without any intervening 
+characters.
+
+For example, given:
+
+s: "barfoothefoobarman"
+
+words: ["foo", "bar"]
+
+You should return the indices: [0,9].
+
+"""
+
 def findSubstring(string,words):
     index=[]
     for i in range(0,len(words)):
@@ -119,9 +137,8 @@ def findSubstring(string,words):
     return index
 
 # uncomment this to run the above function
-string="barfoothefoobarmannCooogCooomann"
-words=["foo","bar","Cooo","mann"]
-print findSubstring(string,words)
-
+#string="barfoothefoobarmannCooogCooomann"
+#words=["foo","bar","Cooo","mann"]
+#print findSubstring(string,words)
 
 
