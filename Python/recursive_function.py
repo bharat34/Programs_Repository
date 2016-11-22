@@ -1,16 +1,17 @@
 
 """
-Given an array of integers, return indices of the two
+Given an array of integers, return indices of the two
 numbers such that they add up to a specific target.
-You may assume that each input would have exactly one solution.
+You may assume that each input would have exactly one solution.
 
 Example:
 
 Given nums = [2, 7, 11, 15], target = 9, 
 Because nums[0] + nums[1] = 2 + 7 = 9, 
 return [0, 1].
-"""
 
+"""
+# -*- coding: utf-8 -*-
 def sum_index(nums_list,target):
     index=[]
     for i in range(0,len(nums_list)):
@@ -24,7 +25,7 @@ nums_list=[2,7,11,15]
 target=26
 
 # uncomment this to run the above function
-#print sum_index(nums_list,target)
+print sum_index(nums_list,target)
 
 """
   Recursive function to calculate the n factorial
@@ -52,10 +53,10 @@ write a  recursive function to calculate the fibonacci series
 
 Example
 
-    1 = 0
-    2 = 0, 1
-    3 = 0, 1, 1
-    4=  0, 1, 1, 2
+    1=0
+    2=0,1
+    3=0,1,1
+    4=0,1,1,2
     
 """
 
@@ -110,15 +111,17 @@ def findSubstring(string,words):
     index=[]
     for i in range(0,len(words)):
         for j in range(i+1,len(words)):
-            index.append(string.find(words[i]+words[j]))
-            index.append(string.find(words[j]+words[i]))
+            if(string.find(words[i]+words[j])!=-1):
+               index.append(string.find(words[i]+words[j]))
+            if(string.find(words[j]+words[i])!=-1):
+                index.append(string.find(words[j]+words[i]))
     index.sort()
     return index
 
-string="barfoothefoobarman"
-words=["foo","bar"]
+# uncomment this to run the above function
+string="barfoothefoobarmannCooogCooomann"
+words=["foo","bar","Cooo","mann"]
 print findSubstring(string,words)
-
 
 
 
