@@ -141,8 +141,9 @@ def findSubstring(string,words):
 #words=["foo","bar","Cooo","mann"]
 #print findSubstring(string,words)
 """"
-Wriet a program calculate to pascal trianle.
+Write a program calculate the pascal trianle.
 In mathematics, Pascal's triangle is a triangular array of the binomial coefficients.
+Following is the pascal triagle for four trials
     1
    1 1
   1 2 1
