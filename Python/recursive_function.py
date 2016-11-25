@@ -140,5 +140,39 @@ def findSubstring(string,words):
 #string="barfoothefoobarmannCooogCooomann"
 #words=["foo","bar","Cooo","mann"]
 #print findSubstring(string,words)
+""""
+Wriet a program calculate to pascal trianle.
+In mathematics, Pascal's triangle is a triangular array of the binomial coefficients.
+    1
+   1 1
+  1 2 1
+ 1 3 3 1
+"""
+def pascal_series(pascal_list,seq_no,trial):
+    if(seq_no==0):
+        return 0
+    else:
+        if(len(pascal_list)<(sum(range(1,seq_no))+seq_no)):
+            for i in range(trial+1):
+                pascal_list.append(factorial(trial)/(factorial(i)*factorial(trial-i)))
+                i+=1
+            return pascal_series(pascal_list,seq_no,trial+1)
+        return pascal_list
 
+pascal_list=[]
+iteratr=1
+seq_no=5
 
+"""
+# uncomment this to run the above function
+pascal_series(pascal_list,seq_no,iteratr)
+trial=1
+print "trial ",trial,"=> ",
+for i in range(len(pascal_list)):
+    print pascal_list[i],
+    if((sum(range(1,trial+1))+trial)==i+1):
+        trial+=1
+        print "\n",
+        print "trial ",trial,"=> ",
+    i+=1
+""" 
